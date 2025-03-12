@@ -18,17 +18,6 @@ public_users.post("/register", (req,res) => {
     } else {
         res.send("The user " + username + " already exists");
     }
-    
-    // if (authenticated(username, password)) {
-    //     // Generate JWT access token
-    //     let accessToken = jwt.sign({
-    //         data: password,
-    //     }, "access", {expiresIn: 60*60});
-    //     req.session.authenticated = {
-    //         accessToken, username
-    //     }
-    //     res.status(200).send("User successfully logged in");
-    // } else res.status(208).json({"Message": "Invalid login. Check username and password"});
 });
 
 // Get the book list available in the shop
