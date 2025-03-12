@@ -12,9 +12,9 @@ const isValid = (username)=>{ //returns boolean
     });
     // Return true if any user with the same username is found, otherwise false
     if (userswithsamename.length > 0) {
-        return true;
-    } else {
         return false;
+    } else {
+        return true;
     }
 }
 
